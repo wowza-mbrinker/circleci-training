@@ -19,5 +19,13 @@ jobs:
 workflows:
   hello_and_hi:
     jobs:
-      - say_hello
-      - say_hi
+      - say_hello:
+          filters:
+            branches:
+              only:
+                - main
+      - say_hi:
+          filters:
+            branches:
+              only:
+                - main
