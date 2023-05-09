@@ -24,8 +24,4 @@ workflows:
             branches:
               only:
                 - main
-      - say_hi:
-          filters:
-            branches:
-              only:
-                - main
+      - say_hi
